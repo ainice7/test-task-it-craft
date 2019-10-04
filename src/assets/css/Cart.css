@@ -1,0 +1,37 @@
+.shopping-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.shopping-list-jc {
+    justify-content: space-between;
+}
+
+.shopping-list>.product-block {
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.shopping-list>.product-block:nth-child(4n) {
+    margin-right: 0;
+}
+
+.empty-cart {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    min-height: 78vh
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 45px;
+}
