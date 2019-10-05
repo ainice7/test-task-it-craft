@@ -16,7 +16,6 @@ class LoginForm extends React.Component {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if (!err) {
-                console.log('Received values of form: ', values);
                 this.props.logIn(values.userName);
                 this.setState({ redirect: true });
             }
@@ -43,7 +42,6 @@ class LoginForm extends React.Component {
         if(this.state.redirect === true) {
             return <Redirect to='/market' />
         } else if(user) {
-            console.log(user);
             return <div style={{ fontWeight: 700, fontSize: 64 }}>{`You have been already logged ${user}`}</div>
         }
 

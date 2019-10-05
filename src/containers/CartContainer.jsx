@@ -21,7 +21,7 @@ const Cart = ({ addedItems, deleteFromCart }) => {
     return (
         <div>
             <h1>Items you've added: </h1>
-            <div className={ `shopping-list ${addedItems.length >= 4 ? "shopping-list-jc" : ""}` }>
+            <div className={ `shopping-list ${addedItems.length % 4 === 0 ? "shopping-list-jc" : ""}` }>
             {addedItems.map((item, i) => (
                 <div key={i} className="product-block" >
                     <ProductBlock product={item} /> 

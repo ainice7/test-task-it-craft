@@ -3,7 +3,7 @@ import { Layout, Menu, Icon, Badge } from 'antd';
 import { Link } from 'react-router-dom';
 import { connect }  from 'react-redux';
 
-import MainContainer from './containers/MainContainer';
+import MainContainer from './MainContainer';
 import 'antd/dist/antd.css';
 
 const { Header, Content, Footer } = Layout;

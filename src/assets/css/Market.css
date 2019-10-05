@@ -27,6 +27,16 @@
     position: relative;
 }
 
+@media (max-width: 1000px) {
+    .products-list {
+        font-size: 15px;
+    }
+
+    .product-block {
+        min-height: 500px; 
+    }
+}
+
 .product-block:hover {
     border: 3px solid #251f1f;
 }

@@ -14,7 +14,6 @@ const antIcon = <Icon type="loading" style={{ fontSize: 64 }} spin />;
 class Main extends Component {
     componentDidMount() {
         this.props.getProducts();
-        console.log('match', this.props )
     }
 
     render() {

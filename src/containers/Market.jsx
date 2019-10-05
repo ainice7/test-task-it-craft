@@ -8,7 +8,6 @@ import '../assets/css/Market.css';
 import { addToCart } from '../actions/index';
 
 const ProductsList = ({ products, addToCart, addedItems }) => {
-    console.log("products", products);
     
     const buttonSwitch = (product) => {
         if(!addedItems.find((elem) => elem.id === product.id)) {
